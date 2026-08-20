@@ -3,39 +3,43 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>User Profile</title>
+    <title>Alex Morgan | Student Profile</title>
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
 
-    <header>
-	<h1>Welcome to My Portfolio - Student Profile Page</h1>
-    </header>
-
-    <main>
+    <div class="profile-card">
         <!-- Toggle Button -->
-        <button id="theme-btn">  Dark Mode</button>
+        <button id="theme-btn">🌙 Dark Mode</button>
 
-        <img src="https://via.placeholder.com/150" alt="Profile Picture">
-        <h2>Alex Morgan</h2>
-        <p>Passionate Web Developer and UI/UX enthusiast.</p>
+        <header class="profile-header">
+            <img src="https://via.placeholder.com/150" alt="Alex Morgan" class="avatar">
+            <h1>Alex Morgan</h1>
+            <p class="bio">Passionate Web Developer & UI/UX Enthusiast</p>
+        </header>
 
-        <h3>Contact Details</h3>
-        <ul>
-            <li><strong>Email:</strong> alex.morgan@example.com</li>
-            <li><strong>Phone:</strong> +1 (555) 019-2834</li>
-        </ul>
+        <main class="profile-body">
+            <section class="info-group">
+                <h3>Contact Details</h3>
+                <ul class="info-list">
+                    <li><span>Email:</span> alex.morgan@example.com</li>
+                    <li><span>Phone:</span> +1 (555) 019-2834</li>
+                </ul>
+            </section>
 
-        <h3>Social Media</h3>
-        <ul>
-            <li><a href="https://linkedin.com" target="_blank">LinkedIn</a></li>
-            <li><a href="https://github.com" target="_blank">GitHub</a></li>
-        </ul>
-    </main>
+            <section class="info-group">
+                <h3>Social Media</h3>
+                <div class="social-links">
+                    <a href="https://linkedin.com" target="_blank" rel="noopener">LinkedIn</a>
+                    <a href="https://github.com" target="_blank" rel="noopener">GitHub</a>
+                </div>
+            </section>
+        </main>
 
-    <footer>
-        <p>&copy; 2026 Alex Morgan. All rights reserved.</p>
-    </footer>
+        <footer>
+            <p>&copy; 2026 Alex Morgan. All rights reserved.</p>
+        </footer>
+    </div>
 
     <!-- Connected JavaScript File -->
     <script src="script.js"></script>
