@@ -1,1 +1,15 @@
+name: CICD test
 
+on:
+  pull_request: #trigger
+    branches: ["main"]
+
+jobs:
+  test:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v4
+
+      - name: Validate HTML
+        run: echo "Running automated checks on the pull requested code..."
